@@ -5,11 +5,8 @@ const SinglePostPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Chirp</title>
-        <meta
-          name="description"
-          content="Twitter clone built with create t3 app"
-        />
+        <title>Post</title>
+        <meta name="description" content="Individual post page for Chirp" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex h-screen justify-center">

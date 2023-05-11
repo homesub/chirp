@@ -1,6 +1,5 @@
 import { SignInButton, useUser } from "@clerk/nextjs";
 import { type NextPage } from "next";
-import Head from "next/head";
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
 
@@ -91,7 +90,7 @@ const PostView = (props: PostWithUser) => {
       />
       <div className="flex flex-col">
         <div className="flex gap-1 text-slate-300">
-          <Link href={`/@${author.username}}`}>
+          <Link href={`/@${author.username}`}>
             <span>{`@${author.username} `}</span>
           </Link>
           <Link href={`/post/${post.id}`}>
@@ -133,14 +132,6 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <Head>
-        <title>Chirp</title>
-        <meta
-          name="description"
-          content="Twitter clone built with create t3 app"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <main className="flex h-screen justify-center">
         <div className="h-full w-full border-x border-slate-400 md:max-w-2xl">
           <div className="flex border-b border-slate-400 p-4">
